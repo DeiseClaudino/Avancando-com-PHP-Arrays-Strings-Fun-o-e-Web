@@ -8,3 +8,5 @@ $primeiraIdade = $idadeList[0];
 $terceiraIdade = $idadeList[2];
 
 echo "$terceiraIdade";
+
+
