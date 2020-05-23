@@ -21,7 +21,7 @@ $contasCorrentes['123.456.789-11']['saldo'] -= 500;
 
 if (500 > $contasCorrentes['123.456.789-12']['saldo']) 
 {
-    echo "Você não pode sacar este valor" . PHP_EOL;
+    exibeMensagem("Você não pode sacar este valor");
 }
 else {
     
@@ -31,5 +31,10 @@ else {
 
 foreach($contasCorrentes as $cpf => $conta)
 {
-    echo $cpf .' '.$conta['titular'] . ' ' . $conta['saldo'] . PHP_EOL;
+    exibeMensagem($cpf .' '.$conta['titular'] . ' ' . $conta['saldo']);
+}
+
+function exibeMensagem($mensagem)
+{
+    echo $mensagem . PHP_EOL;
 }
