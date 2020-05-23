@@ -17,11 +17,16 @@ $contasCorrentes = [
     ]
 ];
 
+$contasCorrentes['123.456.789-11']['saldo'] -= 500;
+
 if (500 > $contasCorrentes['123.456.789-12']['saldo']) 
 {
     echo "Você não pode sacar este valor" . PHP_EOL;
 }
-    $contasCorrentes['123.456.789-11']['saldo'] -= 500;
+else {
+    
+    $contasCorrentes['123.456.789-12']['saldo'] -= 500;
+}
 
 
 foreach($contasCorrentes as $cpf => $conta)
