@@ -23,6 +23,7 @@ $contasCorrentes['123.456.789-11'] = sacar($contasCorrentes['123.456.789-11'], 5
 $contasCorrentes['123.456.789-12'] = sacar($contasCorrentes['123.456.789-12'], 500);
 $contasCorrentes['123.456.789-10'] = depositar($contasCorrentes['123.456.789-10'], 900);
 titularComLetrasMaiusculas($contasCorrentes['123.456.789-10']);
+unset($contasCorrentes['123.456.789-12']);
 
 foreach($contasCorrentes as $cpf => $conta)
 {
