@@ -2,7 +2,12 @@
 
 function exibeMensagem(string $mensagem)
 {
-    echo $mensagem . PHP_EOL;
+    echo $mensagem . "<br>";
+}
+
+function exibeConta($conta)
+{
+   echo "<li>Titular: $conta[titular]. Saldo: {$conta['saldo']}</li>";
 }
 
 function sacar(array $conta, float $valorASacar) : array
