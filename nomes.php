@@ -1,7 +1,7 @@
 <?php
 
 $nomes = "Giovani, João, Maria, Pedro";
-$array_nomes = explode(" ", $nomes);
+$array_nomes = explode(", ", $nomes);
 
 foreach($array_nomes as $nome)
 {
