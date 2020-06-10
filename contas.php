@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 require "ArrayUtils.php";
 
 $correntistas_e_compras = [
