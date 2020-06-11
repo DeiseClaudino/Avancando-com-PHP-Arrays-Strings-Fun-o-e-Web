@@ -1,5 +1,9 @@
 <?php
 
+namespace Alura;
+
+require 'autoload.php';
+
 $correntistas = [
     'Giovanni',
     'João',
@@ -41,3 +45,10 @@ else
 {
     echo "Não foi encontrado";
 }
+
+
+$maiores = ArrayUtils::encontrarPessoasComSaldoMaior(3000, $relacionados);
+
+echo "<pre>";
+var_dump($maiores);
+echo  "</pre>";
