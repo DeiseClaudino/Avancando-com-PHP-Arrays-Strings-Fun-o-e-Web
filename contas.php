@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
-require "ArrayUtils.php";
+
+namespace Alura;
 
 $correntistas_e_compras = [
     "Giovanni",
