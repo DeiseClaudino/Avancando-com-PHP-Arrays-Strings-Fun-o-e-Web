@@ -5,6 +5,6 @@ spl_autoload_register(
     {
         $caminho          = '/src';
         $diretorio_classe = str_replace("\\", DIRECTORY_SEPARATOR, $namespaceClasse);
-        include_once getcwd().$caminho. DIRECTORY_SEPARATOR . "{$diretorio_classe}.php";
+        @include_once getcwd().$caminho. DIRECTORY_SEPARATOR . "{$diretorio_classe}.php";
     }
 );
